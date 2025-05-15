@@ -55,7 +55,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(12, 289);
+            this.label10.Location = new System.Drawing.Point(12, 300);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(189, 22);
             this.label10.TabIndex = 70;
@@ -168,11 +168,11 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 323);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 339);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(961, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(961, 176);
             this.dataGridView1.TabIndex = 60;
             // 
             // btThem
@@ -231,7 +231,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(996, 485);
+            this.ClientSize = new System.Drawing.Size(996, 527);
             this.Controls.Add(this.btTimkiem);
             this.Controls.Add(this.btHuy);
             this.Controls.Add(this.btXoa);

@@ -52,6 +52,12 @@
     <Compile Include="frmBAN.Designer.cs">
       <DependentUpon>frmBAN.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDANGKYTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDANGKYTK.Designer.cs">
+      <DependentUpon>frmDANGKYTK.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGIABANLE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmBAN.resx">
       <DependentUpon>frmBAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDANGKYTK.resx">
+      <DependentUpon>frmDANGKYTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGIABANLE.resx">
       <DependentUpon>frmGIABANLE.cs</DependentUpon>
