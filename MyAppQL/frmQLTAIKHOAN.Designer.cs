@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtTendangnhap = new System.Windows.Forms.TextBox();
             this.txtMK = new System.Windows.Forms.TextBox();
+            this.btDangnhap = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(884, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(884, 179);
             this.dataGridView1.TabIndex = 36;
             // 
             // label1
@@ -105,12 +106,25 @@
             this.txtMK.Size = new System.Drawing.Size(280, 26);
             this.txtMK.TabIndex = 2;
             // 
+            // btDangnhap
+            // 
+            this.btDangnhap.BackColor = System.Drawing.Color.Yellow;
+            this.btDangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDangnhap.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btDangnhap.Location = new System.Drawing.Point(353, 183);
+            this.btDangnhap.Name = "btDangnhap";
+            this.btDangnhap.Size = new System.Drawing.Size(128, 42);
+            this.btDangnhap.TabIndex = 42;
+            this.btDangnhap.Text = "Đăng nhập";
+            this.btDangnhap.UseVisualStyleBackColor = false;
+            // 
             // frmQLTAIKHOAN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(918, 450);
+            this.ClientSize = new System.Drawing.Size(918, 479);
+            this.Controls.Add(this.btDangnhap);
             this.Controls.Add(this.txtMK);
             this.Controls.Add(this.txtTendangnhap);
             this.Controls.Add(this.label2);
@@ -136,5 +150,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTendangnhap;
         private System.Windows.Forms.TextBox txtMK;
+        private System.Windows.Forms.Button btDangnhap;
     }
 }

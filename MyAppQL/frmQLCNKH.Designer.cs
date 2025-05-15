@@ -49,6 +49,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btThem = new System.Windows.Forms.Button();
             this.btCapnhat = new System.Windows.Forms.Button();
+            this.btXoa = new System.Windows.Forms.Button();
+            this.btHuy = new System.Windows.Forms.Button();
+            this.btTimkiem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,9 +155,9 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(693, 44);
+            this.textBox2.Location = new System.Drawing.Point(743, 44);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 26);
+            this.textBox2.Size = new System.Drawing.Size(259, 26);
             this.textBox2.TabIndex = 6;
             // 
             // textBox3
@@ -173,7 +176,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(649, 90);
+            this.textBox5.Location = new System.Drawing.Point(743, 87);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(259, 26);
             this.textBox5.TabIndex = 7;
@@ -197,7 +200,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(5, 301);
+            this.label10.Location = new System.Drawing.Point(5, 321);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(281, 22);
             this.label10.TabIndex = 14;
@@ -207,37 +210,72 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 348);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 366);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(937, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(1043, 175);
             this.dataGridView1.TabIndex = 15;
             // 
             // btThem
             // 
-            this.btThem.Location = new System.Drawing.Point(263, 257);
+            this.btThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.Location = new System.Drawing.Point(151, 273);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(108, 32);
+            this.btThem.Size = new System.Drawing.Size(108, 38);
             this.btThem.TabIndex = 72;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
             // 
             // btCapnhat
             // 
-            this.btCapnhat.Location = new System.Drawing.Point(472, 257);
+            this.btCapnhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCapnhat.Location = new System.Drawing.Point(503, 273);
             this.btCapnhat.Name = "btCapnhat";
             this.btCapnhat.Size = new System.Drawing.Size(108, 38);
             this.btCapnhat.TabIndex = 73;
             this.btCapnhat.Text = "Cập nhật";
             this.btCapnhat.UseVisualStyleBackColor = true;
             // 
+            // btXoa
+            // 
+            this.btXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoa.Location = new System.Drawing.Point(334, 273);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(100, 38);
+            this.btXoa.TabIndex = 75;
+            this.btXoa.Text = "Xóa";
+            this.btXoa.UseVisualStyleBackColor = true;
+            // 
+            // btHuy
+            // 
+            this.btHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHuy.Location = new System.Drawing.Point(692, 273);
+            this.btHuy.Name = "btHuy";
+            this.btHuy.Size = new System.Drawing.Size(102, 38);
+            this.btHuy.TabIndex = 78;
+            this.btHuy.Text = "Hủy";
+            this.btHuy.UseVisualStyleBackColor = true;
+            // 
+            // btTimkiem
+            // 
+            this.btTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTimkiem.Location = new System.Drawing.Point(849, 273);
+            this.btTimkiem.Name = "btTimkiem";
+            this.btTimkiem.Size = new System.Drawing.Size(108, 38);
+            this.btTimkiem.TabIndex = 81;
+            this.btTimkiem.Text = "Tìm kiếm";
+            this.btTimkiem.UseVisualStyleBackColor = true;
+            // 
             // frmQLCNKH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(958, 510);
+            this.ClientSize = new System.Drawing.Size(1064, 553);
+            this.Controls.Add(this.btTimkiem);
+            this.Controls.Add(this.btHuy);
+            this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btCapnhat);
             this.Controls.Add(this.btThem);
             this.Controls.Add(this.dataGridView1);
@@ -289,5 +327,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.Button btCapnhat;
+        private System.Windows.Forms.Button btXoa;
+        private System.Windows.Forms.Button btHuy;
+        private System.Windows.Forms.Button btTimkiem;
     }
 }

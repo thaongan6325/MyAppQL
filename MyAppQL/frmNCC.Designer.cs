@@ -41,6 +41,11 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btThem = new System.Windows.Forms.Button();
+            this.btXoa = new System.Windows.Forms.Button();
+            this.btCapnhat = new System.Windows.Forms.Button();
+            this.btHuy = new System.Windows.Forms.Button();
+            this.btTimkiem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,7 +134,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(5, 264);
+            this.label11.Location = new System.Drawing.Point(5, 307);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(221, 22);
             this.label11.TabIndex = 14;
@@ -151,20 +156,70 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 306);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 342);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(874, 158);
+            this.dataGridView1.Size = new System.Drawing.Size(926, 183);
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // btThem
+            // 
+            this.btThem.Location = new System.Drawing.Point(132, 241);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(88, 37);
+            this.btThem.TabIndex = 76;
+            this.btThem.Text = "Thêm";
+            this.btThem.UseVisualStyleBackColor = true;
+            // 
+            // btXoa
+            // 
+            this.btXoa.Location = new System.Drawing.Point(287, 241);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(94, 37);
+            this.btXoa.TabIndex = 77;
+            this.btXoa.Text = "Xóa";
+            this.btXoa.UseVisualStyleBackColor = true;
+            // 
+            // btCapnhat
+            // 
+            this.btCapnhat.Location = new System.Drawing.Point(441, 241);
+            this.btCapnhat.Name = "btCapnhat";
+            this.btCapnhat.Size = new System.Drawing.Size(94, 37);
+            this.btCapnhat.TabIndex = 78;
+            this.btCapnhat.Text = "Cập nhật";
+            this.btCapnhat.UseVisualStyleBackColor = true;
+            // 
+            // btHuy
+            // 
+            this.btHuy.Location = new System.Drawing.Point(593, 241);
+            this.btHuy.Name = "btHuy";
+            this.btHuy.Size = new System.Drawing.Size(95, 37);
+            this.btHuy.TabIndex = 80;
+            this.btHuy.Text = "Hủy";
+            this.btHuy.UseVisualStyleBackColor = true;
+            // 
+            // btTimkiem
+            // 
+            this.btTimkiem.Location = new System.Drawing.Point(736, 241);
+            this.btTimkiem.Name = "btTimkiem";
+            this.btTimkiem.Size = new System.Drawing.Size(108, 37);
+            this.btTimkiem.TabIndex = 81;
+            this.btTimkiem.Text = "Tìm kiếm";
+            this.btTimkiem.UseVisualStyleBackColor = true;
             // 
             // frmNCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(889, 472);
+            this.ClientSize = new System.Drawing.Size(947, 537);
+            this.Controls.Add(this.btTimkiem);
+            this.Controls.Add(this.btHuy);
+            this.Controls.Add(this.btCapnhat);
+            this.Controls.Add(this.btXoa);
+            this.Controls.Add(this.btThem);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -202,6 +257,11 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btThem;
+        private System.Windows.Forms.Button btXoa;
+        private System.Windows.Forms.Button btCapnhat;
+        private System.Windows.Forms.Button btHuy;
+        private System.Windows.Forms.Button btTimkiem;
     }
 }
 

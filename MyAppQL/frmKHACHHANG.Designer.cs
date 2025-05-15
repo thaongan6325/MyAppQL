@@ -44,6 +44,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.rbNam = new System.Windows.Forms.RadioButton();
             this.rbNu = new System.Windows.Forms.RadioButton();
+            this.btThem = new System.Windows.Forms.Button();
+            this.btXoa = new System.Windows.Forms.Button();
+            this.btCapnhat = new System.Windows.Forms.Button();
+            this.btHuy = new System.Windows.Forms.Button();
+            this.btTimkiem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,7 +114,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 257);
+            this.label7.Location = new System.Drawing.Point(12, 318);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(204, 22);
             this.label7.TabIndex = 6;
@@ -119,11 +124,11 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 297);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 365);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(852, 141);
+            this.dataGridView1.Size = new System.Drawing.Size(886, 141);
             this.dataGridView1.TabIndex = 17;
             // 
             // txtTenKH
@@ -186,12 +191,67 @@
             this.rbNu.UseVisualStyleBackColor = true;
             this.rbNu.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
+            // btThem
+            // 
+            this.btThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.Location = new System.Drawing.Point(90, 252);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(88, 37);
+            this.btThem.TabIndex = 75;
+            this.btThem.Text = "Thêm";
+            this.btThem.UseVisualStyleBackColor = true;
+            // 
+            // btXoa
+            // 
+            this.btXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoa.Location = new System.Drawing.Point(259, 252);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(88, 37);
+            this.btXoa.TabIndex = 76;
+            this.btXoa.Text = "Xóa";
+            this.btXoa.UseVisualStyleBackColor = true;
+            // 
+            // btCapnhat
+            // 
+            this.btCapnhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCapnhat.Location = new System.Drawing.Point(425, 252);
+            this.btCapnhat.Name = "btCapnhat";
+            this.btCapnhat.Size = new System.Drawing.Size(96, 37);
+            this.btCapnhat.TabIndex = 77;
+            this.btCapnhat.Text = "Cập nhật";
+            this.btCapnhat.UseVisualStyleBackColor = true;
+            // 
+            // btHuy
+            // 
+            this.btHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHuy.Location = new System.Drawing.Point(592, 252);
+            this.btHuy.Name = "btHuy";
+            this.btHuy.Size = new System.Drawing.Size(88, 37);
+            this.btHuy.TabIndex = 79;
+            this.btHuy.Text = "Hủy";
+            this.btHuy.UseVisualStyleBackColor = true;
+            // 
+            // btTimkiem
+            // 
+            this.btTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTimkiem.Location = new System.Drawing.Point(745, 252);
+            this.btTimkiem.Name = "btTimkiem";
+            this.btTimkiem.Size = new System.Drawing.Size(95, 37);
+            this.btTimkiem.TabIndex = 80;
+            this.btTimkiem.Text = "Tìm kiếm";
+            this.btTimkiem.UseVisualStyleBackColor = true;
+            // 
             // frmKHACHHANG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(876, 450);
+            this.ClientSize = new System.Drawing.Size(910, 518);
+            this.Controls.Add(this.btTimkiem);
+            this.Controls.Add(this.btHuy);
+            this.Controls.Add(this.btCapnhat);
+            this.Controls.Add(this.btXoa);
+            this.Controls.Add(this.btThem);
             this.Controls.Add(this.rbNu);
             this.Controls.Add(this.rbNam);
             this.Controls.Add(this.label8);
@@ -233,5 +293,10 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RadioButton rbNam;
         private System.Windows.Forms.RadioButton rbNu;
+        private System.Windows.Forms.Button btThem;
+        private System.Windows.Forms.Button btXoa;
+        private System.Windows.Forms.Button btCapnhat;
+        private System.Windows.Forms.Button btHuy;
+        private System.Windows.Forms.Button btTimkiem;
     }
 }
