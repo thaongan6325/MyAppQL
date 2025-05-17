@@ -49,14 +49,15 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btThem = new System.Windows.Forms.Button();
             this.btCapnhat = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btXoa = new System.Windows.Forms.Button();
             this.btHuy = new System.Windows.Forms.Button();
             this.btTimkiem = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.checkNgayKT = new System.Windows.Forms.CheckBox();
+            this.checkNgayBD = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -67,7 +68,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1071, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(1221, 150);
             this.dataGridView1.TabIndex = 35;
             // 
             // label1
@@ -226,6 +227,7 @@
             this.btThem.TabIndex = 55;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btCapnhat
             // 
@@ -236,22 +238,7 @@
             this.btCapnhat.TabIndex = 56;
             this.btCapnhat.Text = "Cập nhật";
             this.btCapnhat.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 57;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(8, 8);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 58;
-            this.pictureBox2.TabStop = false;
+            this.btCapnhat.Click += new System.EventHandler(this.btnCapnhat_Click);
             // 
             // btXoa
             // 
@@ -262,6 +249,7 @@
             this.btXoa.TabIndex = 77;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btHuy
             // 
@@ -272,6 +260,7 @@
             this.btHuy.TabIndex = 80;
             this.btHuy.Text = "Hủy";
             this.btHuy.UseVisualStyleBackColor = true;
+            this.btHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btTimkiem
             // 
@@ -282,18 +271,74 @@
             this.btTimkiem.TabIndex = 81;
             this.btTimkiem.Text = "Tìm kiếm";
             this.btTimkiem.UseVisualStyleBackColor = true;
+            this.btTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(995, 579);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(76, 20);
+            this.label12.TabIndex = 86;
+            this.label12.Text = "Trang 1/1";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(823, 569);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 40);
+            this.button1.TabIndex = 87;
+            this.button1.Text = "<< Trước";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnTruoc_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1131, 569);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 40);
+            this.button2.TabIndex = 88;
+            this.button2.Text = "Sau >>";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btnSau_Click);
+            // 
+            // checkNgayKT
+            // 
+            this.checkNgayKT.AutoSize = true;
+            this.checkNgayKT.Location = new System.Drawing.Point(1062, 145);
+            this.checkNgayKT.Name = "checkNgayKT";
+            this.checkNgayKT.Size = new System.Drawing.Size(172, 24);
+            this.checkNgayKT.TabIndex = 89;
+            this.checkNgayKT.Text = "Chọn ngày kết thúc";
+            this.checkNgayKT.UseVisualStyleBackColor = true;
+            // 
+            // checkNgayBD
+            // 
+            this.checkNgayBD.AutoSize = true;
+            this.checkNgayBD.Location = new System.Drawing.Point(1062, 96);
+            this.checkNgayBD.Name = "checkNgayBD";
+            this.checkNgayBD.Size = new System.Drawing.Size(169, 24);
+            this.checkNgayBD.TabIndex = 90;
+            this.checkNgayBD.Text = "Chọn ngày bắt đầu";
+            this.checkNgayBD.UseVisualStyleBackColor = true;
             // 
             // frmGIABANSI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(1093, 567);
+            this.ClientSize = new System.Drawing.Size(1247, 621);
+            this.Controls.Add(this.checkNgayBD);
+            this.Controls.Add(this.checkNgayKT);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.btTimkiem);
             this.Controls.Add(this.btHuy);
             this.Controls.Add(this.btXoa);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btCapnhat);
             this.Controls.Add(this.btThem);
             this.Controls.Add(this.label10);
@@ -318,8 +363,6 @@
             this.Name = "frmGIABANSI";
             this.Text = "Quản lý giá bán sỉ";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,10 +390,13 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.Button btCapnhat;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btHuy;
         private System.Windows.Forms.Button btTimkiem;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox checkNgayKT;
+        private System.Windows.Forms.CheckBox checkNgayBD;
     }
 }

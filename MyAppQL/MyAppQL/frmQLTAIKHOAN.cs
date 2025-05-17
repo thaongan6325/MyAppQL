@@ -16,5 +16,20 @@ namespace MyAppQL
         {
             InitializeComponent();
         }
+
+        private void btnTruoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSau_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDangnhap_click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

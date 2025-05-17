@@ -45,6 +45,9 @@
             this.btCapnhat = new System.Windows.Forms.Button();
             this.btHuy = new System.Windows.Forms.Button();
             this.btTimkiem = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,7 +105,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 320);
+            this.label6.Location = new System.Drawing.Point(12, 328);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(184, 22);
             this.label6.TabIndex = 5;
@@ -112,28 +115,28 @@
             // 
             this.txtMaHH.Location = new System.Drawing.Point(260, 64);
             this.txtMaHH.Name = "txtMaHH";
-            this.txtMaHH.Size = new System.Drawing.Size(305, 26);
+            this.txtMaHH.Size = new System.Drawing.Size(370, 26);
             this.txtMaHH.TabIndex = 1;
             // 
             // txtTonkho
             // 
             this.txtTonkho.Location = new System.Drawing.Point(260, 210);
             this.txtTonkho.Name = "txtTonkho";
-            this.txtTonkho.Size = new System.Drawing.Size(305, 26);
+            this.txtTonkho.Size = new System.Drawing.Size(370, 26);
             this.txtTonkho.TabIndex = 4;
             // 
             // txtDVT
             // 
             this.txtDVT.Location = new System.Drawing.Point(260, 162);
             this.txtDVT.Name = "txtDVT";
-            this.txtDVT.Size = new System.Drawing.Size(305, 26);
+            this.txtDVT.Size = new System.Drawing.Size(370, 26);
             this.txtDVT.TabIndex = 3;
             // 
             // txtTenHH
             // 
             this.txtTenHH.Location = new System.Drawing.Point(260, 117);
             this.txtTenHH.Name = "txtTenHH";
-            this.txtTenHH.Size = new System.Drawing.Size(305, 26);
+            this.txtTenHH.Size = new System.Drawing.Size(370, 26);
             this.txtTenHH.TabIndex = 2;
             // 
             // dataGridView1
@@ -144,7 +147,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(825, 149);
+            this.dataGridView1.Size = new System.Drawing.Size(1204, 149);
             this.dataGridView1.TabIndex = 11;
             // 
             // btThem
@@ -156,53 +159,93 @@
             this.btThem.TabIndex = 74;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btXoa
             // 
             this.btXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.Location = new System.Drawing.Point(233, 274);
+            this.btXoa.Location = new System.Drawing.Point(260, 274);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(88, 37);
             this.btXoa.TabIndex = 75;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btCapnhat
             // 
             this.btCapnhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCapnhat.Location = new System.Drawing.Point(392, 274);
+            this.btCapnhat.Location = new System.Drawing.Point(448, 274);
             this.btCapnhat.Name = "btCapnhat";
             this.btCapnhat.Size = new System.Drawing.Size(95, 37);
             this.btCapnhat.TabIndex = 76;
             this.btCapnhat.Text = "Cập nhật";
             this.btCapnhat.UseVisualStyleBackColor = true;
+            this.btCapnhat.Click += new System.EventHandler(this.btnCapnhat_Click);
             // 
             // btHuy
             // 
             this.btHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btHuy.Location = new System.Drawing.Point(546, 274);
+            this.btHuy.Location = new System.Drawing.Point(638, 274);
             this.btHuy.Name = "btHuy";
             this.btHuy.Size = new System.Drawing.Size(88, 37);
             this.btHuy.TabIndex = 78;
             this.btHuy.Text = "Hủy";
             this.btHuy.UseVisualStyleBackColor = true;
+            this.btHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btTimkiem
             // 
             this.btTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTimkiem.Location = new System.Drawing.Point(703, 274);
+            this.btTimkiem.Location = new System.Drawing.Point(815, 274);
             this.btTimkiem.Name = "btTimkiem";
             this.btTimkiem.Size = new System.Drawing.Size(94, 37);
             this.btTimkiem.TabIndex = 79;
             this.btTimkiem.Text = "Tìm kiếm";
             this.btTimkiem.UseVisualStyleBackColor = true;
+            this.btTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1116, 532);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 40);
+            this.button2.TabIndex = 85;
+            this.button2.Text = "Sau >>";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btnSau_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(809, 532);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 40);
+            this.button1.TabIndex = 88;
+            this.button1.Text = "<< Trước";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnTruoc_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(981, 542);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(76, 20);
+            this.label12.TabIndex = 89;
+            this.label12.Text = "Trang 1/1";
             // 
             // frmHANGHOA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(849, 524);
+            this.ClientSize = new System.Drawing.Size(1228, 594);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btTimkiem);
             this.Controls.Add(this.btHuy);
             this.Controls.Add(this.btCapnhat);
@@ -246,5 +289,8 @@
         private System.Windows.Forms.Button btCapnhat;
         private System.Windows.Forms.Button btHuy;
         private System.Windows.Forms.Button btTimkiem;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label12;
     }
 }

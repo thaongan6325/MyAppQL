@@ -16,7 +16,7 @@ namespace MyAppQL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDANGKYTK());
+            Application.Run(new frmQLTAIKHOAN());
         }
     }
 }

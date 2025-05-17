@@ -47,6 +47,9 @@
             this.btCapnhat = new System.Windows.Forms.Button();
             this.btHuy = new System.Windows.Forms.Button();
             this.btTimkiem = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,6 +176,7 @@
             this.btThem.TabIndex = 53;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btXoa
             // 
@@ -183,6 +187,7 @@
             this.btXoa.TabIndex = 59;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btCapnhat
             // 
@@ -193,6 +198,7 @@
             this.btCapnhat.TabIndex = 60;
             this.btCapnhat.Text = "Cập nhật";
             this.btCapnhat.UseVisualStyleBackColor = true;
+            this.btCapnhat.Click += new System.EventHandler(this.btnCapnhap_Click);
             // 
             // btHuy
             // 
@@ -203,6 +209,7 @@
             this.btHuy.TabIndex = 63;
             this.btHuy.Text = "Hủy";
             this.btHuy.UseVisualStyleBackColor = true;
+            this.btHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btTimkiem
             // 
@@ -213,13 +220,51 @@
             this.btTimkiem.TabIndex = 84;
             this.btTimkiem.Text = "Tìm kiếm";
             this.btTimkiem.UseVisualStyleBackColor = true;
+            this.btTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(650, 539);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 40);
+            this.button2.TabIndex = 93;
+            this.button2.Text = "<< Trước";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btnTruoc_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(909, 539);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 40);
+            this.button1.TabIndex = 96;
+            this.button1.Text = "Sau >>\r\n";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnSau_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(791, 548);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(76, 20);
+            this.label12.TabIndex = 98;
+            this.label12.Text = "Trang 1/1";
             // 
             // frmQLCTNHAP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(1021, 534);
+            this.ClientSize = new System.Drawing.Size(1021, 591);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btTimkiem);
             this.Controls.Add(this.btHuy);
             this.Controls.Add(this.btCapnhat);
@@ -267,5 +312,8 @@
         private System.Windows.Forms.Button btCapnhat;
         private System.Windows.Forms.Button btHuy;
         private System.Windows.Forms.Button btTimkiem;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label12;
     }
 }

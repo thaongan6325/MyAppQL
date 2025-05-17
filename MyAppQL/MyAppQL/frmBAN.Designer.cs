@@ -42,7 +42,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtMaNV = new System.Windows.Forms.TextBox();
-            this.txtHTTT = new System.Windows.Forms.TextBox();
             this.txtTongtien = new System.Windows.Forms.TextBox();
             this.txtMaHDBan = new System.Windows.Forms.TextBox();
             this.txtKyhieu = new System.Windows.Forms.TextBox();
@@ -56,6 +55,11 @@
             this.btXoa = new System.Windows.Forms.Button();
             this.btHuy = new System.Windows.Forms.Button();
             this.btTimkiem = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cmbHTTT = new System.Windows.Forms.ComboBox();
+            this.checkNgayHD = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -179,7 +183,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1127, 170);
+            this.dataGridView1.Size = new System.Drawing.Size(1215, 170);
             this.dataGridView1.TabIndex = 34;
             // 
             // txtMaNV
@@ -188,13 +192,6 @@
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(303, 26);
             this.txtMaNV.TabIndex = 9;
-            // 
-            // txtHTTT
-            // 
-            this.txtHTTT.Location = new System.Drawing.Point(733, 79);
-            this.txtHTTT.Name = "txtHTTT";
-            this.txtHTTT.Size = new System.Drawing.Size(303, 26);
-            this.txtHTTT.TabIndex = 7;
             // 
             // txtTongtien
             // 
@@ -261,6 +258,7 @@
             this.btThem.TabIndex = 40;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btCapnhat
             // 
@@ -271,6 +269,7 @@
             this.btCapnhat.TabIndex = 41;
             this.btCapnhat.Text = "Cập nhật";
             this.btCapnhat.UseVisualStyleBackColor = true;
+            this.btCapnhat.Click += new System.EventHandler(this.btnCapnhat_Click);
             // 
             // btXoa
             // 
@@ -281,6 +280,7 @@
             this.btXoa.TabIndex = 42;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btHuy
             // 
@@ -291,6 +291,7 @@
             this.btHuy.TabIndex = 80;
             this.btHuy.Text = "Hủy";
             this.btHuy.UseVisualStyleBackColor = true;
+            this.btHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btTimkiem
             // 
@@ -301,13 +302,73 @@
             this.btTimkiem.TabIndex = 81;
             this.btTimkiem.Text = "Tìm kiếm";
             this.btTimkiem.UseVisualStyleBackColor = true;
+            this.btTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(833, 536);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 40);
+            this.button1.TabIndex = 82;
+            this.button1.Text = "<< Trước";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnTruoc_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1131, 536);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 40);
+            this.button2.TabIndex = 83;
+            this.button2.Text = "Sau >>";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btnSau_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(996, 546);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(76, 20);
+            this.label12.TabIndex = 84;
+            this.label12.Text = "Trang 1/1";
+            // 
+            // cmbHTTT
+            // 
+            this.cmbHTTT.FormattingEnabled = true;
+            this.cmbHTTT.Items.AddRange(new object[] {
+            "TM",
+            "CK",
+            "Chưa thanh toán"});
+            this.cmbHTTT.Location = new System.Drawing.Point(733, 79);
+            this.cmbHTTT.Name = "cmbHTTT";
+            this.cmbHTTT.Size = new System.Drawing.Size(303, 28);
+            this.cmbHTTT.TabIndex = 85;
+            // 
+            // checkNgayHD
+            // 
+            this.checkNgayHD.AutoSize = true;
+            this.checkNgayHD.Location = new System.Drawing.Point(1064, 122);
+            this.checkNgayHD.Name = "checkNgayHD";
+            this.checkNgayHD.Size = new System.Drawing.Size(139, 24);
+            this.checkNgayHD.TabIndex = 86;
+            this.checkNgayHD.Text = "Chọn ngày HD";
+            this.checkNgayHD.UseVisualStyleBackColor = true;
             // 
             // frmBAN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(1155, 535);
+            this.ClientSize = new System.Drawing.Size(1243, 592);
+            this.Controls.Add(this.checkNgayHD);
+            this.Controls.Add(this.cmbHTTT);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btTimkiem);
             this.Controls.Add(this.btHuy);
             this.Controls.Add(this.btXoa);
@@ -321,7 +382,6 @@
             this.Controls.Add(this.txtKyhieu);
             this.Controls.Add(this.txtMaHDBan);
             this.Controls.Add(this.txtTongtien);
-            this.Controls.Add(this.txtHTTT);
             this.Controls.Add(this.txtMaNV);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label11);
@@ -359,7 +419,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtMaNV;
-        private System.Windows.Forms.TextBox txtHTTT;
         private System.Windows.Forms.TextBox txtTongtien;
         private System.Windows.Forms.TextBox txtMaHDBan;
         private System.Windows.Forms.TextBox txtKyhieu;
@@ -373,5 +432,10 @@
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btHuy;
         private System.Windows.Forms.Button btTimkiem;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cmbHTTT;
+        private System.Windows.Forms.CheckBox checkNgayHD;
     }
 }

@@ -48,6 +48,11 @@
             this.btXoa = new System.Windows.Forms.Button();
             this.btHuy = new System.Windows.Forms.Button();
             this.btTimkiem = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.checkNgayKT = new System.Windows.Forms.CheckBox();
+            this.checkNgayBD = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,7 +177,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(961, 176);
+            this.dataGridView1.Size = new System.Drawing.Size(1183, 176);
             this.dataGridView1.TabIndex = 60;
             // 
             // btThem
@@ -189,12 +194,13 @@
             // btCapnhat
             // 
             this.btCapnhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCapnhat.Location = new System.Drawing.Point(458, 222);
+            this.btCapnhat.Location = new System.Drawing.Point(476, 222);
             this.btCapnhat.Name = "btCapnhat";
             this.btCapnhat.Size = new System.Drawing.Size(110, 39);
             this.btCapnhat.TabIndex = 72;
             this.btCapnhat.Text = "Cập nhật";
             this.btCapnhat.UseVisualStyleBackColor = true;
+            this.btCapnhat.Click += new System.EventHandler(this.btnCapnhat_Click);
             // 
             // btXoa
             // 
@@ -205,33 +211,93 @@
             this.btXoa.TabIndex = 76;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btHuy
             // 
             this.btHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btHuy.Location = new System.Drawing.Point(638, 222);
+            this.btHuy.Location = new System.Drawing.Point(674, 220);
             this.btHuy.Name = "btHuy";
             this.btHuy.Size = new System.Drawing.Size(103, 39);
             this.btHuy.TabIndex = 79;
             this.btHuy.Text = "Hủy";
             this.btHuy.UseVisualStyleBackColor = true;
+            this.btHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btTimkiem
             // 
             this.btTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTimkiem.Location = new System.Drawing.Point(805, 222);
+            this.btTimkiem.Location = new System.Drawing.Point(877, 220);
             this.btTimkiem.Name = "btTimkiem";
             this.btTimkiem.Size = new System.Drawing.Size(100, 39);
             this.btTimkiem.TabIndex = 80;
             this.btTimkiem.Text = "Tìm kiếm";
             this.btTimkiem.UseVisualStyleBackColor = true;
+            this.btTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1099, 534);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 40);
+            this.button2.TabIndex = 84;
+            this.button2.Text = "Sau >>";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btnSau_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(820, 534);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 40);
+            this.button1.TabIndex = 85;
+            this.button1.Text = "<< Trước";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnTruoc_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(972, 544);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(76, 20);
+            this.label12.TabIndex = 86;
+            this.label12.Text = "Trang 1/1";
+            // 
+            // checkNgayKT
+            // 
+            this.checkNgayKT.AutoSize = true;
+            this.checkNgayKT.Location = new System.Drawing.Point(1007, 101);
+            this.checkNgayKT.Name = "checkNgayKT";
+            this.checkNgayKT.Size = new System.Drawing.Size(172, 24);
+            this.checkNgayKT.TabIndex = 87;
+            this.checkNgayKT.Text = "Chọn ngày kết thúc";
+            this.checkNgayKT.UseVisualStyleBackColor = true;
+            // 
+            // checkNgayBD
+            // 
+            this.checkNgayBD.AutoSize = true;
+            this.checkNgayBD.Location = new System.Drawing.Point(1007, 49);
+            this.checkNgayBD.Name = "checkNgayBD";
+            this.checkNgayBD.Size = new System.Drawing.Size(169, 24);
+            this.checkNgayBD.TabIndex = 88;
+            this.checkNgayBD.Text = "Chọn ngày bắt đầu";
+            this.checkNgayBD.UseVisualStyleBackColor = true;
             // 
             // frmGIABANLE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(996, 527);
+            this.ClientSize = new System.Drawing.Size(1211, 586);
+            this.Controls.Add(this.checkNgayBD);
+            this.Controls.Add(this.checkNgayKT);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btTimkiem);
             this.Controls.Add(this.btHuy);
             this.Controls.Add(this.btXoa);
@@ -281,5 +347,10 @@
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btHuy;
         private System.Windows.Forms.Button btTimkiem;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.CheckBox checkNgayKT;
+        private System.Windows.Forms.CheckBox checkNgayBD;
     }
 }

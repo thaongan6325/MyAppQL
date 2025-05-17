@@ -46,5 +46,40 @@ namespace MyAppQL
         {
 
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCapnhat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTimkiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTruoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSau_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
