@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MyAppQL
 {
-    public partial class frmQLTAIKHOAN : Form
+    public partial class frmDANGKYTK : Form
     {
-        public frmQLTAIKHOAN()
+        public frmDANGKYTK()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace MyAppQL
 
         }
 
-        private void btnDangnhap_click(object sender, EventArgs e)
+        private void btnDangky_Click(object sender, EventArgs e)
         {
 
         }
