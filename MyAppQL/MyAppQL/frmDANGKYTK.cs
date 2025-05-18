@@ -31,5 +31,10 @@ namespace MyAppQL
         {
 
         }
+
+        private void txtSoTrang_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

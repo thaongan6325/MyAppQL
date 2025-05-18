@@ -39,22 +39,24 @@
             this.txtMK = new System.Windows.Forms.TextBox();
             this.txtHoten = new System.Windows.Forms.TextBox();
             this.txtTenDN = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDangky = new System.Windows.Forms.Button();
+            this.btnTruoc = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnSau = new System.Windows.Forms.Button();
+            this.txtSoTrang = new System.Windows.Forms.TextBox();
+            this.tstrang = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(363, 29);
+            this.label5.Location = new System.Drawing.Point(390, 22);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(452, 47);
+            this.label5.Size = new System.Drawing.Size(441, 46);
             this.label5.TabIndex = 10;
             this.label5.Text = "ĐĂNG KÝ TÀI KHOẢN";
             // 
@@ -156,49 +158,67 @@
             this.txtTenDN.Size = new System.Drawing.Size(364, 26);
             this.txtTenDN.TabIndex = 1;
             // 
-            // button1
+            // btnDangky
             // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.Location = new System.Drawing.Point(549, 320);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 47);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "ĐĂNG KÝ";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnDangky_Click);
+            this.btnDangky.BackColor = System.Drawing.Color.White;
+            this.btnDangky.Location = new System.Drawing.Point(549, 320);
+            this.btnDangky.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDangky.Name = "btnDangky";
+            this.btnDangky.Size = new System.Drawing.Size(150, 47);
+            this.btnDangky.TabIndex = 5;
+            this.btnDangky.Text = "ĐĂNG KÝ";
+            this.btnDangky.UseVisualStyleBackColor = false;
+            this.btnDangky.Click += new System.EventHandler(this.btnDangky_Click);
             // 
-            // button2
+            // btnTruoc
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(872, 645);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 40);
-            this.button2.TabIndex = 83;
-            this.button2.Text = "<< Trước";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.btnTruoc_Click);
+            this.btnTruoc.BackColor = System.Drawing.Color.White;
+            this.btnTruoc.Location = new System.Drawing.Point(839, 646);
+            this.btnTruoc.Name = "btnTruoc";
+            this.btnTruoc.Size = new System.Drawing.Size(100, 40);
+            this.btnTruoc.TabIndex = 6;
+            this.btnTruoc.Text = "<< Trước";
+            this.btnTruoc.UseVisualStyleBackColor = false;
+            this.btnTruoc.Click += new System.EventHandler(this.btnTruoc_Click);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1006, 655);
+            this.label12.Location = new System.Drawing.Point(966, 655);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 20);
+            this.label12.Size = new System.Drawing.Size(50, 20);
             this.label12.TabIndex = 85;
-            this.label12.Text = "Trang 1/1";
+            this.label12.Text = "Trang";
             // 
-            // button3
+            // btnSau
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1121, 645);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 40);
-            this.button3.TabIndex = 86;
-            this.button3.Text = "Sau >>";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.btnSau_Click);
+            this.btnSau.BackColor = System.Drawing.Color.White;
+            this.btnSau.Location = new System.Drawing.Point(1121, 645);
+            this.btnSau.Name = "btnSau";
+            this.btnSau.Size = new System.Drawing.Size(100, 40);
+            this.btnSau.TabIndex = 7;
+            this.btnSau.Text = "Sau >>";
+            this.btnSau.UseVisualStyleBackColor = false;
+            this.btnSau.Click += new System.EventHandler(this.btnSau_Click);
+            // 
+            // txtSoTrang
+            // 
+            this.txtSoTrang.Location = new System.Drawing.Point(1032, 652);
+            this.txtSoTrang.Name = "txtSoTrang";
+            this.txtSoTrang.Size = new System.Drawing.Size(40, 26);
+            this.txtSoTrang.TabIndex = 86;
+            this.txtSoTrang.Click += new System.EventHandler(this.txtSoTrang_Click);
+            // 
+            // tstrang
+            // 
+            this.tstrang.AutoSize = true;
+            this.tstrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tstrang.Location = new System.Drawing.Point(1078, 655);
+            this.tstrang.Name = "tstrang";
+            this.tstrang.Size = new System.Drawing.Size(22, 20);
+            this.tstrang.TabIndex = 87;
+            this.tstrang.Text = "/1";
             // 
             // frmDANGKYTK
             // 
@@ -206,10 +226,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(1234, 698);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.tstrang);
+            this.Controls.Add(this.txtSoTrang);
+            this.Controls.Add(this.btnSau);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnTruoc);
+            this.Controls.Add(this.btnDangky);
             this.Controls.Add(this.txtTenDN);
             this.Controls.Add(this.txtHoten);
             this.Controls.Add(this.txtMK);
@@ -242,9 +264,11 @@
         private System.Windows.Forms.TextBox txtMK;
         private System.Windows.Forms.TextBox txtHoten;
         private System.Windows.Forms.TextBox txtTenDN;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDangky;
+        private System.Windows.Forms.Button btnTruoc;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSau;
+        private System.Windows.Forms.TextBox txtSoTrang;
+        private System.Windows.Forms.Label tstrang;
     }
 }

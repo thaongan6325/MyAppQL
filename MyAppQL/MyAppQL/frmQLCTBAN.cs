@@ -56,5 +56,15 @@ namespace MyAppQL
         {
 
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSoTrang_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
