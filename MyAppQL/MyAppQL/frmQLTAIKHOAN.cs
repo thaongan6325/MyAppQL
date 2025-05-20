@@ -36,5 +36,20 @@ namespace MyAppQL
         {
 
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void frmQLTAIKHOAN_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmQLTAIKHOAN_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

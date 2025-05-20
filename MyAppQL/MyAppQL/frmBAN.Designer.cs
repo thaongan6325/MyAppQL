@@ -61,7 +61,7 @@
             this.cmbHTTT = new System.Windows.Forms.ComboBox();
             this.checkNgayHD = new System.Windows.Forms.CheckBox();
             this.txtSoTrang = new System.Windows.Forms.TextBox();
-            this.tstrang = new System.Windows.Forms.Label();
+            this.lblTongSoTrang = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -187,6 +187,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1215, 170);
             this.dataGridView1.TabIndex = 34;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // txtMaNV
             // 
@@ -372,15 +373,15 @@
             this.txtSoTrang.TabIndex = 19;
             this.txtSoTrang.Click += new System.EventHandler(this.txtSoTrang_Click);
             // 
-            // tstrang
+            // lblTongSoTrang
             // 
-            this.tstrang.AutoSize = true;
-            this.tstrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tstrang.Location = new System.Drawing.Point(1060, 546);
-            this.tstrang.Name = "tstrang";
-            this.tstrang.Size = new System.Drawing.Size(22, 20);
-            this.tstrang.TabIndex = 86;
-            this.tstrang.Text = "/1";
+            this.lblTongSoTrang.AutoSize = true;
+            this.lblTongSoTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongSoTrang.Location = new System.Drawing.Point(1060, 546);
+            this.lblTongSoTrang.Name = "lblTongSoTrang";
+            this.lblTongSoTrang.Size = new System.Drawing.Size(22, 20);
+            this.lblTongSoTrang.TabIndex = 86;
+            this.lblTongSoTrang.Text = "/1";
             // 
             // frmBAN
             // 
@@ -388,7 +389,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(1243, 592);
-            this.Controls.Add(this.tstrang);
+            this.Controls.Add(this.lblTongSoTrang);
             this.Controls.Add(this.txtSoTrang);
             this.Controls.Add(this.checkNgayHD);
             this.Controls.Add(this.cmbHTTT);
@@ -464,6 +465,6 @@
         private System.Windows.Forms.ComboBox cmbHTTT;
         private System.Windows.Forms.CheckBox checkNgayHD;
         private System.Windows.Forms.TextBox txtSoTrang;
-        private System.Windows.Forms.Label tstrang;
+        private System.Windows.Forms.Label lblTongSoTrang;
     }
 }

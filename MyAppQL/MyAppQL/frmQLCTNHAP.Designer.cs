@@ -48,7 +48,7 @@
             this.btnTruoc = new System.Windows.Forms.Button();
             this.btnSau = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.tstrang = new System.Windows.Forms.Label();
+            this.lblTongSoTrang = new System.Windows.Forms.Label();
             this.txtSoTrang = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -91,6 +91,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1192, 177);
             this.dataGridView1.TabIndex = 46;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // label6
             // 
@@ -244,15 +245,15 @@
             this.label12.TabIndex = 98;
             this.label12.Text = "Trang";
             // 
-            // tstrang
+            // lblTongSoTrang
             // 
-            this.tstrang.AutoSize = true;
-            this.tstrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tstrang.Location = new System.Drawing.Point(1043, 548);
-            this.tstrang.Name = "tstrang";
-            this.tstrang.Size = new System.Drawing.Size(22, 20);
-            this.tstrang.TabIndex = 99;
-            this.tstrang.Text = "/1";
+            this.lblTongSoTrang.AutoSize = true;
+            this.lblTongSoTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongSoTrang.Location = new System.Drawing.Point(1043, 548);
+            this.lblTongSoTrang.Name = "lblTongSoTrang";
+            this.lblTongSoTrang.Size = new System.Drawing.Size(22, 20);
+            this.lblTongSoTrang.TabIndex = 99;
+            this.lblTongSoTrang.Text = "/1";
             // 
             // txtSoTrang
             // 
@@ -269,7 +270,7 @@
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(1215, 591);
             this.Controls.Add(this.txtSoTrang);
-            this.Controls.Add(this.tstrang);
+            this.Controls.Add(this.lblTongSoTrang);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnSau);
             this.Controls.Add(this.btnTruoc);
@@ -319,7 +320,7 @@
         private System.Windows.Forms.Button btnTruoc;
         private System.Windows.Forms.Button btnSau;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label tstrang;
+        private System.Windows.Forms.Label lblTongSoTrang;
         private System.Windows.Forms.TextBox txtSoTrang;
     }
 }

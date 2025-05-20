@@ -21,3 +21,4 @@ C:\Hoctap\MyApp\MyAppQL\MyAppQL\obj\Debug\MyAppQL.csproj.CoreCompileInputs.cache
 C:\Hoctap\MyApp\MyAppQL\MyAppQL\obj\Debug\MyAppQL.exe
 C:\Hoctap\MyApp\MyAppQL\MyAppQL\obj\Debug\MyAppQL.pdb
 C:\Hoctap\MyApp\MyAppQL\MyAppQL\obj\Debug\MyAppQL.frmDANGKYTK.resources
+C:\Hoctap\MyApp\MyAppQL\MyAppQL\obj\Debug\MyAppQL.frmTRANGCHU.resources

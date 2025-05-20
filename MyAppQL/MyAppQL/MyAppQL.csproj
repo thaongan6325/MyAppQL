@@ -130,6 +130,12 @@
     <Compile Include="frmQLTAIKHOAN.Designer.cs">
       <DependentUpon>frmQLTAIKHOAN.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTRANGCHU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRANGCHU.Designer.cs">
+      <DependentUpon>frmTRANGCHU.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmBAN.resx">
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLTAIKHOAN.resx">
       <DependentUpon>frmQLTAIKHOAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRANGCHU.resx">
+      <DependentUpon>frmTRANGCHU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
